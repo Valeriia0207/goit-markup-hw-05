@@ -472,6 +472,9 @@ img{
 .subscribe-form{
     display: flex;
 }
+.subscribe-label{
+    gap: 24px;
+}
 .subscribe-input{
     width: 264px;
     height: 40px;
@@ -482,9 +485,13 @@ img{
     margin-right: 24px;
     outline: none;
     padding: 8px 16px;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
 }
 .subscribe-input::placeholder{
-    color: #FFF;
+    color #ffffff;
     background-color: inherit;
     font-size: 12px;
     line-height: 2.0;
@@ -510,7 +517,7 @@ img{
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -525,6 +532,7 @@ img{
 }
 .icon-send{
     fill: rgba(255, 255, 255, 1);
+    margin-left: 16px;
 }
 
 .backdrop{

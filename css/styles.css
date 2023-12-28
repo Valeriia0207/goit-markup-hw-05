@@ -692,6 +692,7 @@ img{
 .check-input{
     visibility: hidden;
 }
+
 .check-privacy{
     display: block;
     color: #8E8F99;
@@ -729,6 +730,7 @@ img{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    color: #FFF;
     cursor: pointer;
     min-width: 169px;
     padding: 16px 32px;

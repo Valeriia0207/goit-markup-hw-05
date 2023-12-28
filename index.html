@@ -452,10 +452,22 @@
                 </label>
                 <label class="form-label" for="comment">
                     Comment
-                    <textarea class="t-area" name="comment" id="comment" rows="7" placeholder="Text input"></textarea>
+                    <textarea 
+                        class="t-area" 
+                        name="comment" 
+                        id="comment" 
+                        rows="7" 
+                        placeholder="Text input"></textarea>
                 </label>
-                <label>I accept the terms and conditions of the <span  >Privacy Policy</span>
-                <input type="checkbox" name="accept">
+                <label class="check-priv-policy" for="accept">
+                    <input type="checkbox" id="accept" name="accept">
+                    <span class="check-icon-box">
+                        <svg class="check-icon" width="10" height="8">
+                            <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
+                    </span>
+                    I accept the terms and conditions of the
+                    <a class="priv-policy" href="">Privacy Policy</a>
                 </label> 
             </form>
             <button class="modal-btn-send" type="submit">Send</button>

@@ -423,44 +423,53 @@
             </button>
             <p class="modal-p">Leave your contacts and we will call you back</p>
             <form class="modal-form" name="modal-form" novalidate autocomplete="off" method="post">
-                <label class="form-label" for="username">
-                    Name
-                    <div class="form-field">
-                        <input class="form-input" id="username" type="text" name="username" placeholder="" />
-                        <svg class="form-icon" width="18" height="18">
-                            <use href="./images/icons.svg#icon-person"></use>
-                        </svg>
-                    </div>
-                </label>
-                <label class="form-label" for="userphone">
-                    Phone
-                    <div class="form-field">
-                        <input class="form-input" id="userphone" type="tel" name="userphone" placeholder="" />
-                        <svg class="form-icon" width="18" height="18">
-                            <use href="./images/icons.svg#icon-phone"></use>
-                        </svg>
-                    </div>
-                </label>
-                <label class="form-label" for="useremail">
-                    Email
-                    <div class="form-field">
-                        <input class="form-input" id="useremail" type="email" name="useremail" placeholder="" />
-                        <svg class="form-icon" width="18" height="18">
-                            <use href="./images/icons.svg#icon-message"></use>
-                        </svg>
-                    </div>
-                </label>
-                <label class="form-label" for="comment">
-                    Comment
-                    <textarea 
-                        class="t-area" 
-                        name="comment" 
-                        id="comment" 
-                        rows="7" 
-                        placeholder="Text input"></textarea>
-                </label>
-                <label class="check-priv-policy" for="accept">
-                    <input type="checkbox" id="accept" name="accept">
+                <div class="form-wrapped">
+                    <label class="form-label" for="user-name">
+                        Name
+                        <div class="form-field">
+                            <input class="form-input" id="user-name" type="text" name="username" placeholder="" />
+                            <svg class="form-icon" width="18" height="24">
+                                <use href="./images/icons.svg#icon-person"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+                <div class="form-wrapped">
+                    <label class="form-label" for="user-phone">
+                        Phone
+                        <div class="form-field">
+                            <input class="form-input" id="user-phone" type="tel" name="userphone" placeholder="" />
+                            <svg class="form-icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+                <div class="form-wrapped">
+                    <label class="form-label" for="user-email">
+                        Email
+                        <div class="form-field">
+                            <input class="form-input" id="user-email" type="email" name="useremail" placeholder="" />
+                            <svg class="form-icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-message"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+                <div class="form-wrapped">
+                    <label class="form-label" for="user-comment">
+                        Comment
+                        <textarea
+                            class="t-area"
+                            name="user-comment"
+                            id="user-comment"
+                            rows="7"
+                            placeholder="Text input"></textarea>
+                    </label>
+                </div>
+                <div class="form-checkbox">
+                    <input class="visually-hidden" type="checkbox" id="user-privacy" name="user-privacy" value="true">
+                    <label class="check-privacy" for="user-privacy"></label>
                     <span class="check-icon-box">
                         <svg class="check-icon" width="10" height="8">
                             <use href="./images/icons.svg#icon-check"></use>
@@ -468,7 +477,8 @@
                     </span>
                     I accept the terms and conditions of the
                     <a class="priv-policy" href="">Privacy Policy</a>
-                </label> 
+                    </label>
+                </div>
             </form>
             <button class="modal-btn-send" type="submit">Send</button>
         </div>

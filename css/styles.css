@@ -471,6 +471,7 @@ img{
 }
 .subscribe-form{
     display: flex;
+    gap: 24px;
 }
 .subscribe-label{
     gap: 24px;
@@ -598,7 +599,9 @@ img{
 .modal-btn:hover+.modal-icon{
     fill: #FFF;
 }
-
+.modal-icon{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-icon:hover,
 .modal-icon:focus{
     fill: #ffffff

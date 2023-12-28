@@ -397,26 +397,24 @@
                     </li>
                 </ul>
             </div>
-            <div class="subscribe-cont">
+            <div class="c subscribe-cont">
                 <p class="subscribe-title">Subscribe</p>
                 <form class="subscribe-form">
                     <label for="useremail">
-                    <input class="subscribe-input" id="useremail" type="email" name="useremail" placeholder="E-mail">
+                        <input class="subscribe-input" id="useremail" type="email" name="useremail" placeholder="E-mail">
                     </label>
+                        <button class="subscribe-button" type="submit">
+                        Subscribe
+                            <svg class="icon-send" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
                 </form>
-                <button class="subscribe-button" type="submit">
-                    Subscribe
-                    <svg class="icon-send" width="24" height="24">
-                        <use href="./images/icons.svg#icon-send"></use>
-                    </svg>
-                </button>
-                
-                
             </div>
         </div>
     </footer>
     <!--modal window-->
-    <div class="backdrop is-open"> 
+    <div class="backdrop"> 
         <div class="modal-window">
             <button class="modal-btn" type="button" aria-label="modal close button">
                 <svg class="modal-icon" width="8" height="8">
@@ -427,32 +425,38 @@
             <form class="modal-form" name="modal-form" novalidate autocomplete="off" method="post">
                 <label class="form-label" for="username">
                     Name
-                    <input id="username" type="text" name="username" placeholder="" />
-                        <svg class="modal-icon" width="18" height="18">
-                        <use href="./images/icons.svg#icon-person"></use>
+                    <div class="form-field">
+                        <input class="form-input" id="username" type="text" name="username" placeholder="" />
+                        <svg class="form-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-person"></use>
                         </svg>
+                    </div>
                 </label>
                 <label class="form-label" for="userphone">
                     Phone
-                    <input id="userphone" type="tel" name="userphone" placeholder="" />
-                    <svg class="modal-icon" width="18" height="18">
-                        <use href="./images/icons.svg#icon-phone"></use>
-                    </svg>
+                    <div class="form-field">
+                        <input class="form-input" id="userphone" type="tel" name="userphone" placeholder="" />
+                        <svg class="form-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
                 </label>
                 <label class="form-label" for="useremail">
                     Email
-                    <input  id="useremail" type="email" name="useremail" placeholder="" />
-                    <svg class="modal-icon" width="18" height="18">
-                        <use href="./images/icons.svg#icon-message"></use>
-                    </svg>
+                    <div class="form-field">
+                        <input class="form-input" id="useremail" type="email" name="useremail" placeholder="" />
+                        <svg class="form-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-message"></use>
+                        </svg>
+                    </div>
                 </label>
-                <label class="form-label">
+                <label class="form-label" for="comment">
                     Comment
-                    <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                    <textarea class="t-area" name="comment" id="comment" rows="7" placeholder="Text input"></textarea>
                 </label>
-                <label>I accept the terms and conditions of the Privacy Policy
+                <label>I accept the terms and conditions of the <span  >Privacy Policy</span>
                 <input type="checkbox" name="accept">
-                </label>
+                </label> 
             </form>
             <button class="modal-btn-send" type="submit">Send</button>
         </div>

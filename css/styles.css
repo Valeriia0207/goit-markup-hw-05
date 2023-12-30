@@ -477,7 +477,6 @@ img{
 }
 .subscribe-form{
     display: flex;
-    gap: 24px;
 }
 .subscribe-label{
     gap: 24px;
@@ -543,7 +542,6 @@ img{
 }
 .icon-send{
     fill: rgba(255, 255, 255, 1);
-    margin-left: 16px;
 }
 
 .backdrop{

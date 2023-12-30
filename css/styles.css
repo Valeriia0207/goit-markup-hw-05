@@ -435,7 +435,13 @@ img{
 .footer-socials-icons-list {
     display: flex;
     gap: 16px;
+    width: 208px;
+    margin-right: 65px;
 }
+.footer-socials-icons-item:not(:last-child) {
+    margin-right: 0;
+}
+
 .footer-socials-icons-item {  
     width: 40px;
     height: 40px;
